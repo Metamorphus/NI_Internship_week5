@@ -1,0 +1,152 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="url.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <div class="container-fluid" id="header">
+        <div class="navbar-header">
+            <a class="navbar-brand "  href="#">NewtonStore</a>        
+        </div>
+                    
+         <ul class="nav navbar-nav">            <!--  <button class="slide-menu-menu-button" type="button">>></button> --></ul>
+         <ul class="nav navbar-nav navbar-right">            
+             <li><a class="dark-button" id="cart-link" href="cart.html?quan=0"><span class="glyphicon glyphicon-usd"></span></a></li>
+             <li><a class="dark-button" href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+             <li><a class="dark-button" href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+             <li><a class="dark-button" href="#"><span id="cart" class="glyphicon glyphicon-shopping-cart"></span> <span id="shopping-cart-badge" class="badge">0</span></a></li>
+         </ul>
+    </div>
+</nav>
+
+<nav style="margin-bottom:10px">
+    <div class="container-fluid lower-menu sub-menu">
+        <ul class="nav navbar-nav">
+            <li class="dropdown sub-menu-item">
+	            <a class="light-dropdown dropdown-toggle" data-toggle="dropdown" href="#">String instruments<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	            	<li><a href="#">Guitars</a></li>
+	                <li><a href="#">Violins</a></li>
+	                <li><a href="#">Violas</a></li>
+	                <li><a href="#">Double basses</a></li>
+	                <li><a href="#">Celli</a></li>
+	            </ul>
+            </li>
+            <li class="dropdown sub-menu-item">
+	            <a class="light-dropdown dropdown-toggle " data-toggle="dropdown" href="#">Wind instruments<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	                <li><a href="#">Flutes</a></li>
+	                <li><a href="#">Saxophones</a></li>
+	                <li><a href="#">Bassoons</a></li>
+	                <li><a href="#">Clarinets</a></li>
+	            </ul>
+            </li>
+            <li class="dropdown sub-menu-item">
+	            <a class="light-dropdown dropdown-toggle" data-toggle="dropdown" href="#">Electronic instruments<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	            	<li><a href="#">Electronic guitars</a></li>
+	                <li><a href="#">Synthesizers</a></li>
+	                <li><a href="#">Vocoders</a></li>
+	            </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+	<div class="col-sm-9">
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel-body"><img id="main-image" src="http://www.sriveenavani.com/courses/images/violin.png" class="img-responsive" style="width:100%" alt="Violin"></div>
+			</div>
+			<div class="col-sm-4">
+				<h2>Violin</h2>
+				<hr>
+
+				<p><b>Price:&nbsp;</b>100$</p><br>
+                
+                <p><b>Color:&nbsp;</b></p><br>
+                
+                <svg width="250" height="70">
+  					<circle cx="25" cy="25" r="20" stroke="black" stroke-width="1" fill="#FF8000" />
+					<circle cx="75" cy="25" r="20" stroke="black" stroke-width="1" fill="#C00" />
+					<circle cx="125" cy="25" r="20" stroke="black" stroke-width="1" fill="#773C00" />
+				</svg>
+
+				<p>
+					<b>Quantity:&nbsp;</b>
+					<select id="get-count">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</p>
+				<br>
+
+				<button id="add-to-cart-button" type="button">Add to cart</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="panel-body img-border"><img class="preview" src="http://www.sriveenavani.com/courses/images/violin.png" class="img-responsive img-border" style="width:100%" alt="Image"></div>
+			</div>
+
+			<div class="preview col-sm-2">
+				<div class="panel-body"><img class="preview" src="http://www.mpm-media.de/HighVioline4.JPG" class="img-responsive img-border" style="width:100%" alt="Image" /></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-3">
+		<p>You may also like: </p><br>
+		
+		<img class="recommended" src="http://www.viola-in-music.com/images/my-viola.jpg" class="img-responsive img-border" style="width:100%" alt="Image"><br>
+		<p>Viola: 50$</p><br>
+
+		<img class="recommended" src="http://www.clipartbest.com/cliparts/aie/Ky9/aieKy9qeT.png" class="img-responsive img-border" style="width:100%" alt="Image"><br>
+		<p>Double bass: 100$</p><br>
+	</div>
+</div>
+
+<footer class="container-fluid sub-menu" style="margin-top: 10px; padding-top: 5px;">
+	<div class="footer-content">
+		<div class="col-sm-2 sidenav footer-block sub-menu-item">
+			<p><a class="link-footer" href="#">Sell with NewtonStore</a></p>
+		</div>
+
+		<div class="col-sm-2 sidenav footer-block sub-menu-item">
+			<p><a class="link-footer" href="#">Buy with NewtonStore</a></p>
+		</div>
+
+		<div class="col-sm-2 sidenav footer-block sub-menu-item">
+			<p><a class="link-footer" href="#">About us</a></p>
+		</div>
+
+		<div class="col-sm-2 sidenav footer-block sub-menu-item">
+			<p><a class="link-footer" href="#">Privacy legacy</a></p>
+		</div>
+
+		<div class="col-sm-2 sidenav footer-block sub-menu-item">
+			<p><a class="link-footer" href="#">Terms and conditions</a></p>
+		</div>
+
+		<div class="col-sm-2 sidenav footer-block sub-menu-item">
+			<p><a class="link-footer" href="#">Community</a></p>
+		</div>
+	</div>
+</footer>
+
+</body>
+
+</html>

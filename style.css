@@ -1,0 +1,34 @@
+td {
+	text-align: center;
+}
+
+th {
+	text-align: center;
+}
+
+#header {
+	background-color: #630;
+}
+
+#header a {
+	color: #FF0;
+}
+
+.sub-menu {
+	background-color: #FF9;
+}
+
+.sub-menu a {
+	color: #8D6334
+}
+
+.sub-menu a:hover{
+	background-color: #8D6334 !important;
+	color: #FF9;
+	text-decoration: none;	
+}
+
+.img-border img {
+	border-width: 10px !important;
+    border-color: #000 !important;
+}
