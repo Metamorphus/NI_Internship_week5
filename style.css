@@ -60,3 +60,9 @@ th {
 input {
 	width: 50px;
 }
+
+footer {
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
